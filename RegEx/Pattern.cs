@@ -7,19 +7,17 @@ namespace RegEx
 {
     public class Pattern
     {
-        public static void LastName(string name)
+        public static void Email(string name)
         {
-            string LastName = "^[A-Z][a-zA-Z]{1,10}$"
-;
-
-            Regex regex = new Regex(LastName);
+            string Email = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)*[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+            Regex regex = new Regex(Email);
             if (regex.IsMatch(name))
             {
                 Console.WriteLine(name + " is valid name");
             }
             else
             {
-                Console.WriteLine(name + " is invalid. Please Enter Last name start with capital letter and maximum 10 charactors");
+                Console.WriteLine(name + " is invalid.");
             }
 
         }
