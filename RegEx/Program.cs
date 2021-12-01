@@ -7,10 +7,10 @@ namespace RegEx
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular Expression Program \n");
-            Console.WriteLine("Write your Mobile Number ex : +91 9834084341 .");
-            Console.Write("\n Enter Mobile Number : ");
+            Console.WriteLine("Write your Password ex : Aa9 length atleast 8 .");
+            Console.Write("\n Enter Password : ");
             string name = Console.ReadLine();
-            Pattern.MobileNumber(name);
+            Pattern.Password(name);
         }
     }
 }
