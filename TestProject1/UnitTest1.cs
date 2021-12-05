@@ -69,6 +69,7 @@ namespace TestProject1
             string actual = p.Password("Invalid");
 
             Assert.AreEqual(expected, actual);
+
         }
     }
 }
